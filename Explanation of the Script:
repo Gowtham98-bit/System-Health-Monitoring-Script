@@ -1,0 +1,22 @@
+CPU Usage Monitoring:
+
+The script uses the top command to retrieve CPU usage statistics and calculates the percentage of CPU usage by subtracting idle CPU time from 100%.
+If CPU usage exceeds the threshold, it logs an alert message.
+Memory Usage Monitoring:
+
+The free command is used to get memory statistics, and the script calculates the percentage of used memory (used/total * 100).
+If memory usage exceeds the threshold, it logs an alert message.
+Disk Usage Monitoring:
+
+The df -h command lists the disk usage for all mounted file systems.
+The script checks if any disk usage exceeds the specified threshold and logs an alert message if it does.
+Running Processes Monitoring:
+
+The ps aux --no-headers command lists all running processes. The script counts the number of lines output by this command to determine how many processes are running.
+If the number of running processes exceeds the threshold, it logs an alert message.
+Log File:
+
+The script writes the health check report to /var/log/system_health_monitor.log, which can be configured to write elsewhere as needed.
+Alerts:
+
+If any of the metrics exceed their respective thresholds, the script logs an alert to the log file and prints it to the console.
