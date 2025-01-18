@@ -1,0 +1,3 @@
+Log File Permissions:
+Make sure that the script has permission to write to the log file, especially if you're writing to a system log file like /var/log/system_health_monitor.log.
+You might need to run the script with elevated permissions or adjust the log file's permissions.
