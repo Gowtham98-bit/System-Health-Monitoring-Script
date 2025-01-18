@@ -1,0 +1,5 @@
+chmod +x system_health_monitor.sh
+Run the script manually or schedule it with cron for periodic checks:
+bash
+Copy
+./system_health_monitor.sh
