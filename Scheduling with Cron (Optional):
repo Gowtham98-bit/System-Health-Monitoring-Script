@@ -1,0 +1,8 @@
+Open the crontab file for editing:
+bash
+Copy
+crontab -e
+Add the following line to run the script every 5 minutes:
+bash
+Copy
+*/5 * * * * /path/to/system_health_monitor.sh
